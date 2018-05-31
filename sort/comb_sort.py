@@ -2,6 +2,10 @@ import math
 
 
 def sort(collection):
+    """
+     :param collection: collection of items (char, string, int...), unsorted
+     :rtype: the same collection of item, sorted
+     """
     c_length = len(collection)
     gap = len(collection)
     shrink = 1.3
