@@ -4,6 +4,12 @@ def sort(collection):
 
 
 def quicksort(collection, low, high):
+    """
+    :param collection: collection of items (char, string, int...), unsorted
+    :param low: index of collection from where to start to sort
+    :param high: last index of collection where to end to sort
+    :rtype: the same collection of item, sorted
+    """
     if low < high:
         pivot = partition(collection, low, high)
         quicksort(collection, low, pivot - 1)
