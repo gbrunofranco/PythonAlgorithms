@@ -1,3 +1,4 @@
+import copy
 import math
 
 
@@ -6,7 +7,7 @@ def sort(collection):
     :param collection: collection of items (char, string, int...), unsorted
     :rtype: the same collection of item, sorted
     """
-    collection_copy = collection[:]
+    collection_copy = copy.deepcopy(collection)
     top_down_split(collection_copy, 0, len(collection), collection)
     return collection
 
