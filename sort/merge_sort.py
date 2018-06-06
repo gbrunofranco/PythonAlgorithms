@@ -46,3 +46,11 @@ def top_down_merge(collection, begin, middle, end, collection_copy):
         else:
             collection_copy[k] = collection[j]
             j += 1
+
+
+if __name__ == "__main__":
+    user_input = input("Insert values separated by a comma.\n")
+    unsorted = []
+    for item in user_input.split(','):
+        unsorted.append(item)
+    print(sort(unsorted))
