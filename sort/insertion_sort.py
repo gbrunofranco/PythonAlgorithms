@@ -14,7 +14,7 @@ def sort(collection):
     return collection
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     user_input = input("Insert values separated by a comma.\n")
     unsorted = []
     for item in user_input.split(','):
